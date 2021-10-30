@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- contenedor -->
+    <div id="contenedor">
+
+        <!-- div para la calculadora -->
+        <div>
+            <h1>Calculadora</h1>
+            <div>
+                <input type="text" name="Número" id="datos" disabled>
+            </div>
+
+            <div>
+                <!-- Los números -->
+                <div>
+                    <input type="button" onclick="printNumber(this)" value="0">
+                    <input type="button" onclick="printNumber(this)" value="1">
+                    <input type="button" onclick="printNumber(this)" value="2">
+                    <input type="button" onclick="printNumber(this)" value="3">
+                    <input type="button" onclick="printNumber(this)" value="4">
+                    <input type="button" onclick="printNumber(this)" value="5">
+                    <input type="button" onclick="printNumber(this)" value="6">
+                    <input type="button" onclick="printNumber(this)" value="7">
+                    <input type="button" onclick="printNumber(this)" value="8">
+                    <input type="button" onclick="printNumber(this)" value="9">
+
+                    <input type="button" onclick="clearInput()" value="Limpiar">
+
+                    <input type="button" onclick="printOperation()" value="=">
+
+
+                </div>
+
+                <!-- Las propiedades -->
+                <div>
+
+                    <input type="button" onclick="printOperation()" value="+">
+
+                    <input type="button" onclick="printOperation()" value="-">
+
+                    <input type="button" onclick="printOperation()" value="*">
+
+                    <input type="button" onclick="printOperation()" value="/">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
